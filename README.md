@@ -1,1 +1,1 @@
-# seo-duplication
+# seo-duplication### Running the applicationTo execute the app, please run the following:`TODO`### TestingTo test the application, please run the following:`./env/bin/py.test`
