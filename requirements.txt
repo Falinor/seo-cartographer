@@ -1,7 +1,0 @@
-docopt
-matplotlib
-numpy
-pytest
-requests
-scrapy
-scipy
