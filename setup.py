@@ -12,18 +12,18 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='cartographer',
+    name='cartodup',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
     version='0.0.0',
 
-    description='SEO cartographer',
+    description='SEO duplication cartographer',
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/Falinor/seo-cartographer',
+    url='https://github.com/Falinor/cartodup',
 
     # Author details
     author='Falinor',
@@ -84,7 +84,7 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points={
         'console_scripts': [
-            'cartographer=cartographer:main',
+            'cartodup=cartodup:main',
         ],
     },
 )
