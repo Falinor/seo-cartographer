@@ -1,2 +1,2 @@
-google.fr
-devcode.fr
+https://google.fr
+https://devcode.fr
