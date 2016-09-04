@@ -1,5 +1,7 @@
 from docopt import docopt
-from extractor import extractor
+
+import cartodup.extractor as extractor
+import cartodup.parser as parser
 
 
 def configure():
@@ -18,9 +20,8 @@ def configure():
 
 
 def execute(args):
-    pages
-    import cartodup.comparator.comparator
-    extractor.extract(pages)
+    url = parser.parse(args['--file'])
+    content = extractor.extract(url)
     # extractor(args['--file'])
 
 

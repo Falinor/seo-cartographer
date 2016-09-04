@@ -1,4 +1,4 @@
-from .interpreter import interpreter
+import cartodup.interpreter as interpreter
 
 
 def main():
