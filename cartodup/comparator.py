@@ -29,6 +29,7 @@ class Comparator:
 
     def display(self):
         # TODO: display graphics
+        pass
 
     def __add_result(self, url1: str, url2: str, result: float):
         """Adds the result of a comparison between two URLs into the
