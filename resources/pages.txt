@@ -1,2 +1,4 @@
-https://google.fr
-https://devcode.fr
+https://fr.wikipedia.org/wiki/Apache_Subversion
+https://fr.wikipedia.org/wiki/GNU/Linux
+https://fr.wikipedia.org/wiki/X_Window_System
+https://fr.wikipedia.org/wiki/Pile_graphique_Linux
