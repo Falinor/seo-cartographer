@@ -1,0 +1,431 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cartodup package &mdash; SEO Duplication Cartographer 1.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="SEO Duplication Cartographer 1.0.0 documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SEO Duplication Cartographer
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <!-- Local TOC -->
+                <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">cartodup package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-cartodup.comparator">cartodup.comparator module</a></li>
+<li><a class="reference internal" href="#module-cartodup.extractor">cartodup.extractor module</a></li>
+<li><a class="reference internal" href="#module-cartodup.interpreter">cartodup.interpreter module</a></li>
+<li><a class="reference internal" href="#module-cartodup.jaccard">cartodup.jaccard module</a></li>
+<li><a class="reference internal" href="#module-cartodup.parser">cartodup.parser module</a></li>
+<li><a class="reference internal" href="#module-cartodup">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">SEO Duplication Cartographer</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>cartodup package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/cartodup.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cartodup-package">
+<h1>cartodup package<a class="headerlink" href="#cartodup-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-cartodup.comparator">
+<span id="cartodup-comparator-module"></span><h2>cartodup.comparator module<a class="headerlink" href="#module-cartodup.comparator" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cartodup.comparator.Comparator">
+<em class="property">class </em><code class="descclassname">cartodup.comparator.</code><code class="descname">Comparator</code><span class="sig-paren">(</span><em>shingles_size=3</em><span class="sig-paren">)</span><a class="headerlink" href="#cartodup.comparator.Comparator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="cartodup.comparator.Comparator.add">
+<code class="descname">add</code><span class="sig-paren">(</span><em>url: cartodup.extractor.URL</em><span class="sig-paren">)</span><a class="headerlink" href="#cartodup.comparator.Comparator.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds an URL to the matrix after having computed a duplication
+ratio for each other URL.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>url</strong> &#8211; The new URL that will be added.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="cartodup.comparator.Comparator.display">
+<code class="descname">display</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cartodup.comparator.Comparator.display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cartodup.comparator.Comparator.print_csv">
+<code class="descname">print_csv</code><span class="sig-paren">(</span><em>out</em><span class="sig-paren">)</span><a class="headerlink" href="#cartodup.comparator.Comparator.print_csv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints the duplication matrix as CSV to the given out file.
+This file should either be sys.stdout or a CSV file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>out</strong> &#8211; The file-like object to print to.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-cartodup.extractor">
+<span id="cartodup-extractor-module"></span><h2>cartodup.extractor module<a class="headerlink" href="#module-cartodup.extractor" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cartodup.extractor.URL">
+<em class="property">class </em><code class="descclassname">cartodup.extractor.</code><code class="descname">URL</code><span class="sig-paren">(</span><em>url: str</em><span class="sig-paren">)</span><a class="headerlink" href="#cartodup.extractor.URL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="cartodup.extractor.URL.get_resource">
+<code class="descname">get_resource</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &rarr; str<a class="headerlink" href="#cartodup.extractor.URL.get_resource" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="cartodup.extractor.URL.get_resource_static">
+<em class="property">static </em><code class="descname">get_resource_static</code><span class="sig-paren">(</span><em>url: str</em><span class="sig-paren">)</span> &rarr; str<a class="headerlink" href="#cartodup.extractor.URL.get_resource_static" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes the protocol and replaces all special chars in the given URL
+by a dash, providing a better filename to save on disk.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>url</strong> &#8211; The URL string to treat.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A path to an HTML resource obtained from the given URL.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="cartodup.extractor.URL.strip_protocol">
+<code class="descname">strip_protocol</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &rarr; str<a class="headerlink" href="#cartodup.extractor.URL.strip_protocol" title="Permalink to this definition">¶</a></dt>
+<dd><p>See strip_protocol_static.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="cartodup.extractor.URL.strip_protocol_static">
+<em class="property">static </em><code class="descname">strip_protocol_static</code><span class="sig-paren">(</span><em>url: str</em><span class="sig-paren">)</span> &rarr; str<a class="headerlink" href="#cartodup.extractor.URL.strip_protocol_static" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes the protocol from an URL string e.g. removing http/https/....</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>url</strong> &#8211; The URL string to treat.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The URL string without the protocol.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="cartodup.extractor.extract">
+<code class="descclassname">cartodup.extractor.</code><code class="descname">extract</code><span class="sig-paren">(</span><em>url: str</em><span class="sig-paren">)</span> &rarr; cartodup.extractor.URL<a class="headerlink" href="#cartodup.extractor.extract" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetches an URL string, saves HTML data to a disk file and returns the
+given URL as an URL object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>url</strong> &#8211; The URL to fetch from.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The URL object built with the given string.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cartodup.interpreter">
+<span id="cartodup-interpreter-module"></span><h2>cartodup.interpreter module<a class="headerlink" href="#module-cartodup.interpreter" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cartodup.interpreter.configure">
+<code class="descclassname">cartodup.interpreter.</code><code class="descname">configure</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cartodup.interpreter.configure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configures the CLI and executes the corresponding actions.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cartodup.interpreter.execute">
+<code class="descclassname">cartodup.interpreter.</code><code class="descname">execute</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#cartodup.interpreter.execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes the main logic of the application.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>args</strong> &#8211; The args given by the CLI parser.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cartodup.jaccard">
+<span id="cartodup-jaccard-module"></span><h2>cartodup.jaccard module<a class="headerlink" href="#module-cartodup.jaccard" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cartodup.jaccard.get_shingles">
+<code class="descclassname">cartodup.jaccard.</code><code class="descname">get_shingles</code><span class="sig-paren">(</span><em>f</em>, <em>shingles_size</em>, <em>max_shingles=-1</em><span class="sig-paren">)</span><a class="headerlink" href="#cartodup.jaccard.get_shingles" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>f</strong> &#8211; The file to read.</li>
+<li><strong>shingles_size</strong> &#8211; The size of shingles.</li>
+<li><strong>max_shingles</strong> &#8211; If filled, this option triggers probabilistic method</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>with a maximum of max_shingles shingles.
+:return: An iterator of shingles.
+:rtype: Iterator</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cartodup.jaccard.jaccard">
+<code class="descclassname">cartodup.jaccard.</code><code class="descname">jaccard</code><span class="sig-paren">(</span><em>file1</em>, <em>file2</em>, <em>shingles_size=3</em><span class="sig-paren">)</span> &rarr; float<a class="headerlink" href="#cartodup.jaccard.jaccard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the jaccard distance between to sets.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>file1</strong> &#8211; The first file to compare.</li>
+<li><strong>file2</strong> &#8211; The second file to compare.</li>
+<li><strong>shingles_size</strong> &#8211; The size of shingles.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The result of comparison.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cartodup.parser">
+<span id="cartodup-parser-module"></span><h2>cartodup.parser module<a class="headerlink" href="#module-cartodup.parser" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cartodup.parser.parse">
+<code class="descclassname">cartodup.parser.</code><code class="descname">parse</code><span class="sig-paren">(</span><em>path: str</em><span class="sig-paren">)</span> &rarr; str<a class="headerlink" href="#cartodup.parser.parse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extracts URLs from given file&#8217;s path.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> &#8211; A path to the file containing different URLs to fetch.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A generator containing lines read from the file.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cartodup">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cartodup" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cartodup.main">
+<code class="descclassname">cartodup.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cartodup.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Andrea Gueugnaut.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
