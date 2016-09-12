@@ -17,7 +17,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.0.0',
+    version='1.0.0',
 
     description='SEO duplication cartographer',
     long_description=long_description,
@@ -51,7 +51,6 @@ setup(
         'docopt',
         'matplotlib',
         'numpy',
-        'pytest',
         'requests',
         'scrapy',
         'scipy'
@@ -62,9 +61,11 @@ setup(
     # for example:
     # $ pip install -e .[dev,test]
     extras_require={
+        'docs': ['sphinx', 'sphinx_rtd_theme'],
         'dev': [],
-        'test': ['coverage'],
+        'test': ['pytest', 'coverage'],
     },
+    setup_requires=['pytest-runner'],
 
     # If there are data files included in your packages that need to be
     # installed, specify them here.  If using Python 2.6 or less, then these
