@@ -10,6 +10,8 @@ import cartodup.parser as parser
 
 
 def configure():
+    """Configures the CLI and executes the corresponding actions.
+    """
     help = """Duplication cartodup
 
     Usage: cartodup -h | -f <path> [-s <number>]
@@ -26,6 +28,11 @@ def configure():
 
 
 def execute(args):
+    """Executes the main logic of the application.
+
+    :param args: The args given by the CLI parser.
+    :return:
+    """
     shingles = 3
     if args['--shingles']:  # Change shingles size if -s is passed
         shingles = int(args['--shingles'])
