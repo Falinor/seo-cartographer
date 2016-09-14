@@ -1,0 +1,3 @@
+[console_scripts]
+cartodup = cartodup:main
+

@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+cartodup/__init__.py
+cartodup/comparator.py
+cartodup/extractor.py
+cartodup/interpreter.py
+cartodup/jaccard.py
+cartodup/parser.py
+cartodup.egg-info/PKG-INFO
+cartodup.egg-info/SOURCES.txt
+cartodup.egg-info/dependency_links.txt
+cartodup.egg-info/entry_points.txt
+cartodup.egg-info/requires.txt
+cartodup.egg-info/top_level.txt
