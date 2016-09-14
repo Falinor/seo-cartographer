@@ -6,7 +6,7 @@ in Python 3, which compares pages 2 by 2 and returns their similarity ratio.
 NB: This app is intended for **python3** use only.
 
 
-### Installation
+## Installation
 
 Clone this repo using the command
 
@@ -18,14 +18,14 @@ Because this project is a student project, it is not referenced in the
 pip registry. In order to install the module locally, go to your
 installation folder and run:
 
-`$ pip install .`
+`$ python3 setup.py install`
 
 The module itself is named *cartodup*. Assuming you are still in the
 installation folder, you may run `$ mkdir test && cd test` to create a
 directory where you will run the app.
 
 
-### Running the application
+## Running the application
 
 The main goal of the application is to compare pages 2 by 2, displaying
 their similarity ratio at the end of the process. The `--file` option
@@ -40,7 +40,12 @@ This command will run the module and output a CSV file containing
 results. You can add any number of resource URLs you want.
 
 
-### Testing
+## Removal
+
+`$ pip3 uninstall cartodup`
+
+
+## Testing
 
 To test the application, you may run the following:
 
@@ -49,13 +54,13 @@ To test the application, you may run the following:
 This command will run the tests contained in the `tests/` folder.
 
 
-### Documentation
+## Documentation
 
 You can find additional documentation in `docs/build/html/`.
 This is the generated API documentation.
 
 
-### Author
+## Author
 
 Andrea Gueugnaut
 EPITA - MTI 2017
