@@ -43,6 +43,11 @@ This command will run the module and output a CSV file containing
 results. You can add any number of resource URLs you want.
 
 
+## Customization
+
+You can customize the `resources/pages.txt` or create your own one.
+
+
 ## Removal
 
 `$ pip3 uninstall cartodup`
