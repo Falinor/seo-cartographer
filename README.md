@@ -20,6 +20,9 @@ installation folder and run:
 
 `$ python3 setup.py install`
 
+Otherwise, you can untar the tarball located in `dist/` folder and copy files
+to the relevant folder on your system, so that the app gets runnable.
+
 The module itself is named *cartodup*. Assuming you are still in the
 installation folder, you may run `$ mkdir test && cd test` to create a
 directory where you will run the app.
