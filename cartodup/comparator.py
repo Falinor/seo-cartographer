@@ -26,10 +26,10 @@ class Comparator:
 
         :param out: The file-like object to print to.
         """
-        print('Page1;Page2;Shingles_size;Similarity', file=out)
+        print('Page1,Page2,Shingles_size,Similarity', file=out)
         for key, val in self.matrix.items():
             for v in val:
-                print('{};{};{};{}'.format(key,
+                print('{},{},{},{}'.format(key,
                                            v,
                                            self.shingles_size,
                                            self.matrix[key][v],
